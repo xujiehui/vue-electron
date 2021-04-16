@@ -10,7 +10,11 @@
     "postuninstall": "electron-builder install-app-deps",
     "dev": "npm run electron:serve",
     "build": "npm run electron:build",
-    "build:all": "vue-cli-service electron:build -ml",
+    "build:mac": "vue-cli-service electron:build --mac",
+    "build:win": "vue-cli-service electron:build --win",
+    "build:linux": "vue-cli-service electron:build --linux",
+    "build:ml": "vue-cli-service electron:build -ml",
+    "build:all": "vue-cli-service electron:build -mwl",
     "generate-icons": "electron-icon-builder --input=./public/xy.png --output=build --flatten"
   },
   "repository": {
