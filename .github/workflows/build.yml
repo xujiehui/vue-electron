@@ -21,7 +21,10 @@ jobs:
           node-version: 12.x
 
       - name: Install and Build
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN  }}
         run: |
+          export GH_TOKEN=${GH_TOKEN}
           npm i
           npm run build
 
