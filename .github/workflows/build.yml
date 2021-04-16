@@ -9,36 +9,10 @@ on:
   workflow_dispatch:
 
 jobs:
-  # build:
-  #   runs-on: macos-latest
-
-  #   steps:
-  #     - uses: actions/checkout@v2
-  #     - name: Use Node.js 12.x
-
-  #       uses: actions/setup-node@v2
-  #       with:
-  #         node-version: 12.x
-
-  #     - name: Install and Build
-  #       env:
-  #         GH_TOKEN: ${{ secrets.GITHUB_TOKEN  }}
-  #       run: |
-  #         export GH_TOKEN=${GH_TOKEN}
-  #         npm i
-  #         npm run build:ml
-
-  #     - name: Upload dist_electron
-  #       uses: actions/upload-artifact@v2
-  #       with:
-  #         name: example.zip
-  #         path: |
-  #           dist_electron/*.zip
-  #           dist_electron/*.dmg
-  window-build:
+  window:
     runs-on: windows-latest
-    
-        steps:
+      
+      steps:
       - uses: actions/checkout@v2
       - name: Use Node.js 12.x
 
