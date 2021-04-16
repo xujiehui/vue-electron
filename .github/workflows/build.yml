@@ -11,8 +11,7 @@ on:
 jobs:
   window:
     runs-on: windows-latest
-      
-      steps:
+    steps:
       - uses: actions/checkout@v2
       - name: Use Node.js 12.x
 
