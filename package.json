@@ -1,0 +1,38 @@
+{
+  "name": "vue-electron",
+  "version": "1.0.0",
+  "description": "An Electron & Vue.js quick start template",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xujiehui/vue-electron.git"
+  },
+  "keywords": [
+    "vue",
+    "electron",
+    "vue-electron"
+  ],
+  "author": "Endless",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/xujiehui/vue-electron/issues"
+  },
+  "homepage": "https://github.com/xujiehui/vue-electron#readme",
+  "dependencies": {
+    "core-js": "^3.6.4",
+    "vue-router": "^3.1.5",
+    "vue": "^2.6.11"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^4.2.0",
+    "@vue/cli-service": "^4.2.0",
+    "electron": "^12.0.0",
+    "sass": "^1.25.0",
+    "sass-loader": "^8.0.2",
+    "output-compile-time-webpack-plugin": "^1.0.2",
+    "vue-cli-plugin-electron-builder": "^1.4.5",
+    "vue-template-compiler": "^2.6.11"
+  }
+}
