@@ -33,10 +33,10 @@ module.exports = {
           ]
         },
         mac: {
-          icon: 'build/icons/icon.ico'
+          icon: 'build/icons/icon.icns'
         },
         linux: {
-          icon: 'build/icons/icon.ico'
+          icon: 'build/icons'
         },
         win: {
           //win相关配置
