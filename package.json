@@ -3,7 +3,12 @@
   "version": "1.0.0",
   "description": "An Electron & Vue.js quick start template",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "electron:build": "vue-cli-service electron:build",
+    "electron:serve": "vue-cli-service electron:serve",
+    "postinstall": "electron-builder install-app-deps",
+    "postuninstall": "electron-builder install-app-deps",
+    "dev": "npm run electron:serve",
+    "build": "npm run electron:build"
   },
   "repository": {
     "type": "git",
