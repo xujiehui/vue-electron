@@ -26,10 +26,14 @@ jobs:
         run: |
           export GH_TOKEN=${GH_TOKEN}
           npm i
-          npm run build
+          npm run build:all
 
       - name: Upload dist_electron
         uses: actions/upload-artifact@v2
         with:
           name: dist_electron
-          path: dist_electron
+          path: |
+            dist_electron/*.zip
+            dist_electron/*.dmp
+            dist_electron/*.exe
+            dist_electron/*.nsis

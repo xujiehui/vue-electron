@@ -9,7 +9,8 @@
     "postinstall": "electron-builder install-app-deps",
     "postuninstall": "electron-builder install-app-deps",
     "dev": "npm run electron:serve",
-    "build": "npm run electron:build"
+    "build": "npm run electron:build",
+    "build:all": "vue-cli-service electron:build -mwl"
   },
   "repository": {
     "type": "git",
