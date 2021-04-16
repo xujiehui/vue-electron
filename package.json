@@ -10,7 +10,8 @@
     "postuninstall": "electron-builder install-app-deps",
     "dev": "npm run electron:serve",
     "build": "npm run electron:build",
-    "build:all": "vue-cli-service electron:build -mwl"
+    "build:all": "vue-cli-service electron:build -mwl",
+    "generate-icons": "electron-icon-builder --input=./public/xy.png --output=build --flatten"
   },
   "repository": {
     "type": "git",
@@ -36,9 +37,10 @@
     "@vue/cli-plugin-babel": "^4.2.0",
     "@vue/cli-service": "^4.2.0",
     "electron": "^12.0.0",
+    "electron-icon-builder": "^2.0.1",
+    "output-compile-time-webpack-plugin": "^1.0.2",
     "sass": "^1.25.0",
     "sass-loader": "^8.0.2",
-    "output-compile-time-webpack-plugin": "^1.0.2",
     "vue-cli-plugin-electron-builder": "^1.4.5",
     "vue-template-compiler": "^2.6.11"
   }
